@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>BookMarkList</title>
+<link href="stylesheets/bookmark.css" type="text/css" rel="stylesheet">
+<link href="stylesheets/reveal.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/ajaxSearch.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
+<script type="text/javascript"></script>
+</head>
+<body>
+	<div>
+		<input type="text" id="keywordInput" />
+		<span id="resultNum"></span>
+	</div>
+	<ul>
+	</ul>
+	<div>
+	<table>
+	<tr class="lineDiv">
+		<td width="20%">
+		<a href="#" class="" data-reveal-id="myModal" data-animation="none">
+			添加书签 </a>
+		</td>
+		<td width="80%">
+		<div class="lineDiv" id='showPage'></div>
+		</td>	
+	</tr>
+	</table>
+	</div>
+	<div id="myModal" class="reveal-modal">
+		<table>
+			<tr>
+				<th>
+					<h2>添加新书签</h2>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<h3>书签名：</h3>
+				</td>
+				<td><input type="text" id="title"
+					style="width: 350px; height: 30px"></td>
+			</tr>
+			<tr>
+				<td>
+					<h3>书签地址：</h3>
+				</td>
+				<td><input type="text" id="title"
+					style="width: 350px; height: 30px"></td>
+			</tr>
+			<tr>
+				<td colspan="2" id="msg"
+					style="color: red; text-align: center; text-size: 18px"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<h3 id="addBookMark">添加</h3>
+				</td>
+			</tr>
+			<a class="close-reveal-modal">&#215;</a>
+		</table>
+	</div>
+</body>
+</html>

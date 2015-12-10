@@ -1,0 +1,68 @@
+body {
+	font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	font-size: 18px;
+	margin: auto;
+	padding: auto;
+}
+
+body div {
+	width: 60%;
+	margin: 80px auto 40px auto;
+}
+
+#keywordInput {
+	width: 75%;
+	height: 35px;
+	border: 2px solid #A2B3C8;
+	font-size: 18px;
+}
+#resultNum {
+	width: 20%;
+	margin-left: 15px;
+}
+
+ul {
+	width: 60%;
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+}
+
+.bookmarkTitle {
+	overflow: hidden;
+	font-size: 20px;
+	color: rgb(98, 95, 95);
+	margin: 10px auto;
+}
+
+.bookmarkCreated {
+	text-align: right;
+	font-size: 15px;
+	color: rgb(172, 166, 166);
+	padding-bottom: 8px;
+	border-bottom: dashed 1px rgb(98, 95, 95);
+}
+
+table {
+	width: 100%;
+	text-align: center;
+}
+
+/*弹出页面内容窗口*/
+.big-link { display:block; margin-top: 100px; text-align: center; font-size: 18px; color: #06f; }
+.lineDiv1{
+	width:10%;
+	float:lef;
+}
+.lineDiv2{
+	width:auto;
+	float:right  
+}
+.lineDiv{
+	text-alin:center;
+	width:100%;
+	display:inline;
+}
+
+
