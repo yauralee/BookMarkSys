@@ -18,7 +18,7 @@ function appendBookmarks(data, title) {
 				str += "<li class='bookmarkTitle'>" + redTitle + "</li>";
 				str += "<li class='bookmarkCreated'>"
 						+ timeFormat(item.created)
-						+ "&nbsp;&nbsp;<input type='button' value='删除' title='"
+						+ "&nbsp;&nbsp;<input type='button' class='deleteButton' value='删除' title='"
 						+ item.title
 						+ "'  onclick='deleteBookMark(this);'/></li>";
 			});
@@ -51,7 +51,7 @@ $(function() {
 				}
 				$("#myModal").css("visibility", "hidden");
 				$(".reveal-modal-bg").css("display", "none");
-				alert(result.msg);
+				//alert(result.msg);
 				findBookMarkListByPage(1);
 			}
 		});
@@ -68,7 +68,7 @@ function deleteBookMark(obj) {
 				'title' : title,
 			},
 			success : function(result) {
-				alert(result.msg);
+				//alert(result.msg);
 				findBookMarkListByPage(1);
 			}
 		})

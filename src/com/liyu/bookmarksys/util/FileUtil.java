@@ -1,9 +1,11 @@
 package com.liyu.bookmarksys.util;
 
+
+
 public class FileUtil {
 	public static String path(){
-		String real = FileUtil.class.getClassLoader().getResource("").getPath();
-		return real.substring(1, real.length()).replace("/", "\\\\")+"bookmarks.json";
+		String real = FileUtil.class.getClassLoader().getResource("./bookmarks.json").getPath();
+		return real;
 	}
 	
 	public static void main(String[] args) {
